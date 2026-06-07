@@ -1,0 +1,161 @@
+[
+    {
+        "id": "c09e70fd1c9b5c27",
+        "type": "tab",
+        "label": "Fluxo 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4d60d2496878d1ed",
+        "type": "mqtt in",
+        "z": "c09e70fd1c9b5c27",
+        "name": "Escuta BPM",
+        "topic": "fiap/void/bpm",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "hivemq_broker_void",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "fe5f609d6f63a12f"
+            ]
+        ]
+    },
+    {
+        "id": "71864258b3a7b73c",
+        "type": "mqtt in",
+        "z": "c09e70fd1c9b5c27",
+        "name": "Escuta Fadiga",
+        "topic": "fiap/void/fadiga",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "hivemq_broker_void",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "d862f53cde27b0d2"
+            ]
+        ]
+    },
+    {
+        "id": "fe5f609d6f63a12f",
+        "type": "ui_gauge",
+        "z": "c09e70fd1c9b5c27",
+        "name": "Dashboard BPM",
+        "group": "ui_group_void",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Frequência Cardíaca (BPM)",
+        "label": "BPM",
+        "format": "{{value}}",
+        "min": "60",
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "100",
+        "seg2": "150",
+        "className": "",
+        "x": 650,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d862f53cde27b0d2",
+        "type": "ui_gauge",
+        "z": "c09e70fd1c9b5c27",
+        "name": "Dashboard Fadiga",
+        "group": "ui_group_void",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Fadiga Muscular (%)",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "50",
+        "seg2": "80",
+        "className": "",
+        "x": 650,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "hivemq_broker_void",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Public",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "NodeRED_VOID_Team_GS",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ui_group_void",
+        "type": "ui_group",
+        "name": "Saúde do Astronauta - Tempo Real",
+        "tab": "ui_tab_void",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ui_tab_void",
+        "type": "ui_tab",
+        "name": "VOID Space Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c78151c49fd94864",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
