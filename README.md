@@ -59,5 +59,73 @@ Os dados coletados são enviados simultaneamente para:
 - Dashboard em tempo real via MQTT
 - Endpoint de persistência na nuvem:
 
+- ## 📊 Diagramação
+
+O arquivo `diagram.json` contém toda a topologia do circuito, permitindo a reprodução fiel do ambiente de simulação.
+
+---
+
+## 🚀 Guia de Execução
+
+### 1️⃣ Hardware / Simulação
+
+* Acesse o projeto no **Wokwi**
+* Inicie a simulação do **ESP32**
+
+### 2️⃣ Dashboard
+
+* Importe o arquivo `flows.json` no **Node-RED**
+* Certifique-se de que o Broker MQTT esteja ativo:
+
+```text
+broker.hivemq.com
+```
+
+### 3️⃣ API
+
+O back-end encontra-se operante e pronto para receber requisições **HTTP POST** enviadas pelo dispositivo IoT.
+
+---
+
+## 🎥 Demonstração
+
+### 🔗 Link da Simulação
+
+Acesse o protótipo no **Wokwi**.
+
+### 📹 Vídeo de Apresentação
+
+Assista à demonstração completa do projeto.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* ESP32
+* Arduino Framework (C++)
+* MQTT
+* HiveMQ Broker
+* Node-RED
+* Java
+* Quarkus
+* Oracle Database
+* JWT Authentication
+* Wokwi Simulator
+* OLED SSD1306
+* Docker
+
+---
+
+## 🎯 Objetivo do Projeto
+
+O VOID foi desenvolvido para fornecer uma solução de monitoramento biométrico inteligente voltada à reabilitação física, permitindo:
+
+* Monitoramento remoto de pacientes
+* Coleta de dados em tempo real
+* Persistência segura das informações
+* Acompanhamento clínico através de dashboards interativos
+* Escalabilidade para ambientes hospitalares e centros de reabilitação
+
+
 ```text
 https://java-advanced-5ce0.onrender.com/api/sessoes
