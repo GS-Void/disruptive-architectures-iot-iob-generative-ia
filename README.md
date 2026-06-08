@@ -89,13 +89,13 @@ O back-end encontra-se operante e pronto para receber requisições **HTTP POST*
 
 ## 🎥 Demonstração
 
-### 🔗 Link da Simulação
+### 🔗 Link da Simulação: https://wokwi.com/projects/466198724033639425
 
 Acesse o protótipo no **Wokwi**.
 
 ### 📹 Vídeo de Apresentação
 
-Assista à demonstração completa do projeto.
+https://youtu.be/fVzIQKiZows
 
 ---
 
