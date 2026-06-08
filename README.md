@@ -12,7 +12,7 @@ O sistema realiza **telemetria em tempo real** de parâmetros vitais (**BPM** e 
 
 | Integrante                       | RM     |
 | -------------------------------- | ------ |
-| Pedro Henrique Luiz Alves Duarte | 56349O |
+| Pedro Henrique Luiz Alves Duarte | 5634O5 |
 | Guilherme Macedo Martins         | 562396 |
 | Henrique Martins                 | 563620 |
 
